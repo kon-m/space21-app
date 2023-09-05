@@ -5,7 +5,7 @@ const SpaceData: React.FC = () => {
   const [data, setData] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch("https://mkon.pythonanywhere.com")
+    fetch("https://mkon.pythonanywhere.com/space21")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error("Error fetching data:", error));
